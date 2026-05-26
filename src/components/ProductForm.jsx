@@ -35,7 +35,7 @@ export default function ProductForm({ onAdd }) {
     setPreview(null)
   }
 
-  const inputClass = "w-full bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-white text-sm focus:outline-none focus:border-yellow-400"
+  const inputClass = "w-full bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-white text-md focus:outline-none focus:border-yellow-400"
 
   return (
     <form onSubmit={handleSubmit} className="bg-gray-900 border border-gray-800 rounded-xl p-6 mb-8">
@@ -72,7 +72,7 @@ export default function ProductForm({ onAdd }) {
             type="file"
             accept="image/*"
             onChange={handleImage}
-            className="w-full text-sm text-gray-400 file:mr-3 file:py-1 file:px-3 file:rounded-lg file:border-0 file:bg-gray-700 file:text-white file:text-xs hover:file:bg-gray-600 cursor-pointer"
+            className="w-full text-md text-gray-400 file:mr-3 file:py-1 file:px-3 file:rounded-lg file:border-0 file:bg-gray-700 file:text-white file:text-xs hover:file:bg-gray-600 cursor-pointer"
           />
         </div>
 
