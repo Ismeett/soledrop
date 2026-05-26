@@ -1,0 +1,69 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Nike Air Max 90",
+      "category": "Sneakers",
+      "price": 129.99,
+      "stock": 12,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+    },
+    {
+      "id": "2",
+      "name": "Jordan 1 Retro High",
+      "category": "Sneakers",
+      "price": 179.99,
+      "stock": 5,
+      "image": "https://images.unsplash.com/photo-1556906781-9a412961a28c?w=400"
+    },
+    {
+      "id": "3",
+      "name": "Stüssy Pullover Hoodie",
+      "category": "Hoodies",
+      "price": 89.99,
+      "stock": 5,
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=400"
+    },
+    {
+      "id": "4",
+      "name": "New Balance 550",
+      "category": "Sneakers",
+      "price": 109.99,
+      "stock": 8,
+      "image": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=400"
+    },
+    {
+      "id": "5",
+      "name": "Supreme Box Logo Tee",
+      "category": "Tees",
+      "price": 49.99,
+      "stock": 2,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"
+    },
+    {
+      "id": "6",
+      "name": "New Era 59FIFTY Cap",
+      "category": "Accessories",
+      "price": 34.99,
+      "stock": 20,
+      "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400"
+    },
+    {
+      "id": "7",
+      "name": "New Era 59FIFTY Cap",
+      "category": "Accessories",
+      "price": 34.99,
+      "stock": 20,
+      "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400"
+    },
+    {
+      "id": "8",
+      "name": "New Era 59FIFTY Cap",
+      "category": "Accessories",
+      "price": 34.99,
+      "stock": 20,
+      "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
