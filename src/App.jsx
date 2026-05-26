@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ProductForm from "./components/ProductForm";
 import SearchBar from "./components/SearchBar";
 import ProductTable from "./components/ProductTable";
-const API_URL = "http://localhost:3001/products";
+const API_URL = 'https://6a15106c91ff9a63de07634e.mockapi.io/api/products'
 
 export function getStatus(stock) {
   if (stock === 0) return "Out of Stock";
