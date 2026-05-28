@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ProductCard from "./ProductCard"
-import EditCard from "./EditCard"
+import ProductCard from "./ProductCard";
+import EditCard from "./EditCard";
 
 export default function ProductTable({ products, onDelete, onEdit }) {
   const [editingId, setEditingId] = useState(null);
@@ -12,7 +12,7 @@ export default function ProductTable({ products, onDelete, onEdit }) {
 
   if (products.length === 0)
     return (
-      <div className="text-center text-gray-500 py-20">No products found.</div>
+      <div className="text-center text-[#666] py-20">No products found.</div>
     );
 
   return (

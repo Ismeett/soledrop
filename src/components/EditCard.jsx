@@ -27,11 +27,11 @@ export default function EditCard({ product, onSave, onCancel }) {
   };
 
   const inputClass =
-    "w-full bg-gray-800 border border-gray-600 rounded-lg px-3 py-2 text-white text-md focus:outline-none focus:border-yellow-400";
+    "w-full bg-[#1e1e1e] border border-[#333] rounded-lg px-3 py-2 text-[#f5f5f5] text-md focus:outline-none focus:border-[#FF6B00]";
 
   return (
-    <div className="bg-gray-900 border border-yellow-400 rounded-2xl overflow-hidden flex flex-col">
-      <div className="w-full h-48 bg-gray-800 flex items-center justify-center overflow-hidden">
+    <div className="bg-[#141414] border border-[#FF6B00] rounded-2xl overflow-hidden flex flex-col">
+      <div className="w-full h-48 bg-[#1e1e1e] flex items-center justify-center overflow-hidden">
         {preview ? (
           <img
             src={preview}
@@ -86,19 +86,19 @@ export default function EditCard({ product, onSave, onCancel }) {
           type="file"
           accept="image/*"
           onChange={handleImage}
-          className="text-xs text-gray-400 file:mr-2 file:py-1 file:px-2 file:rounded-lg file:border-0 file:bg-gray-700 file:text-white hover:file:bg-gray-600 cursor-pointer"
+          className="text-md text-[#666] file:bg-[#1e1e1e] file:text-[#f5f5f5] file:mr-2 file:py-1 file:px-2 file:rounded-lg file:border-0 hover:file:bg-[#2a2a2a] cursor-pointer"
         />
         <StatusBadge stock={parseInt(form.stock) || 0} />
         <div className="flex gap-2 mt-1">
           <button
             onClick={handleSave}
-            className="flex-1 bg-yellow-400 text-black text-md font-semibold py-2 rounded-lg hover:bg-yellow-300 transition-colors"
+            className="flex-1 bg-[#FF6B00] text-white text-md font-semibold py-2 rounded-lg hover:bg-[#FF8C33] transition-colors"
           >
             Save
           </button>
           <button
             onClick={onCancel}
-            className="flex-1 bg-gray-700 text-gray-300 text-md font-semibold py-2 rounded-lg hover:bg-gray-600 transition-colors"
+            className="flex-1 bg-[#1e1e1e] text-[#666] text-md font-semibold py-2 rounded-lg hover:bg-[#2a2a2a] transition-colors"
           >
             Cancel
           </button>

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ProductForm from "./components/ProductForm";
 import SearchBar from "./components/SearchBar";
 import ProductTable from "./components/ProductTable";
-const API_URL = 'https://6a15106c91ff9a63de07634e.mockapi.io/api/products'
+const API_URL = "https://6a15106c91ff9a63de07634e.mockapi.io/api/products";
 
 export function getStatus(stock) {
   if (stock === 0) return "Out of Stock";
@@ -67,32 +67,32 @@ export default function App() {
       .catch((err) => setError(err.message));
   };
 
-  // Derived — filter products for display
+  // filter products for display
   const filtered = products
     .filter((p) => category === "All" || p.category === category)
     .filter((p) => p.name.toLowerCase().includes(search.toLowerCase()));
 
   const inputClass =
-    "bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-white text-md focus:outline-none focus:border-yellow-400";
+    "bg-[#141414] border border-[#333] rounded-lg px-3 py-2 text-[#f5f5f5] text-sm focus:outline-none focus:border-[#FF6B00]";
 
   // Loading state
   if (loading)
     return (
-      <SearchBar
-        search={search}
-        category={category}
-        onSearchChange={setSearch}
-        onCategoryChange={setCategory}
-      />
+      <div className="min-h-screen bg-[#0a0a0a] text-[#f5f5f5] flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-4xl mb-4 animate-bounce">👟</div>
+          <p className="text-[#666]">Loading inventory...</p>
+        </div>
+      </div>
     );
 
   // Error state
   if (error)
     return (
-      <div className="min-h-screen bg-gray-950 text-white flex items-center justify-center">
+      <div className="min-h-screen bg-[#0a0a0a] text-[#f5f5f5] flex items-center justify-center">
         <div className="text-center">
           <p className="text-red-400 font-semibold mb-2">⚠️ {error}</p>
-          <p className="text-gray-500 text-md">
+          <p className="text-[#666] text-md">
             Make sure json-server is running on port 3001
           </p>
         </div>
@@ -100,10 +100,10 @@ export default function App() {
     );
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white p-8">
+    <div className="min-h-screen bg-[#0a0a0a] text-[#f5f5f5] p-8">
       <div className="font-bold mb-1 text-center">
         <h1 className="text-5xl">SoleDrop 👟</h1>
-        <p className="text-gray-400 my-5 text-2xl">Inventory Manager</p>
+        <p className="text-[#666] my-5 text-2xl">Inventory Manager</p>
       </div>
       <ProductForm onAdd={handleAdd} />
       <div className="flex gap-3 mb-4">
@@ -125,7 +125,7 @@ export default function App() {
           <option>Accessories</option>
         </select>
       </div>
-      <p className="text-gray-500 text-xs mb-3">
+      <p className="text-[#666] text-md mb-3">
         Showing {filtered.length} of {products.length} products
       </p>
       <ProductTable
